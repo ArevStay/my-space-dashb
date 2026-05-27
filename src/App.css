@@ -626,3 +626,18 @@ button:active {
 
 
 
+
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
