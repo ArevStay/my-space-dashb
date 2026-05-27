@@ -530,3 +530,99 @@ button:active {
     height: 500px;
   }
 }
+
+.panel-right {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  min-height: 100%;
+}
+
+/* PEOPLE CARD */
+.panel-right .card {
+  width: 100%;
+
+  background: rgba(5, 5, 20, 0.96);
+
+  border-radius: 22px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(111, 0, 255, 0.14);
+
+  box-shadow:
+    0 0 25px rgba(111, 0, 255, 0.18),
+    0 0 50px rgba(76, 201, 255, 0.08);
+}
+
+/* TITLE */
+.panel-right .card h2 {
+  color: #b18cff;
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  letter-spacing: 0.12em;
+
+  margin-bottom: 24px;
+
+  text-transform: uppercase;
+}
+
+/* LIST */
+.panel-right ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  width: 100%;
+}
+
+/* LIST ITEMS */
+.panel-right li {
+  background: rgba(20, 20, 45, 0.7);
+
+  border: 1px solid rgba(111, 0, 255, 0.12);
+
+  border-radius: 14px;
+
+  padding: 14px 18px;
+
+  text-align: center;
+
+  color: #f1f5f9;
+
+  font-size: 1rem;
+
+  line-height: 1.5;
+
+  transition: 0.25s;
+
+  box-shadow:
+    inset 0 0 15px rgba(111, 0, 255, 0.06);
+}
+
+
+
+
+
+
+
+
+

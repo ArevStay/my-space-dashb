@@ -106,6 +106,87 @@ function StrayKidsSong() {
   );
 }
 
+function SpaceFacts() {
+  const facts = [
+    {
+      en: "One day on Venus is longer than one year on Venus.",
+      ru: "Один день на Венере длится дольше, чем один год на Венере."
+    },
+
+    {
+      en: "Saturn could float in water.",
+      ru: "Сатурн мог бы плавать в воде."
+    },
+
+    {
+      en: "Space is completely silent.",
+      ru: "В космосе абсолютная тишина."
+    },
+
+    {
+      en: "The footprints on the Moon stay for millions of years.",
+      ru: "Следы на Луне остаются миллионы лет."
+    },
+
+    {
+      en: "Neutron stars can spin 600 times per second.",
+      ru: "Нейтронные звёзды могут вращаться 600 раз в секунду."
+    },
+
+    {
+      en: "There may be billions of Earth-like planets.",
+      ru: "Во Вселенной могут быть миллиарды планет, похожих на Землю."
+    },
+
+    {
+      en: "A spoon of neutron star weighs billions of tons.",
+      ru: "Одна ложка вещества нейтронной звезды весит миллиарды тонн."
+    },
+
+    {
+      en: "Jupiter has the shortest day in the Solar System.",
+      ru: "У Юпитера самый короткий день в Солнечной системе."
+    }
+  ]
+
+  const [fact, setFact] = useState(facts[0])
+
+  function randomFact() {
+    const random =
+      facts[Math.floor(Math.random() * facts.length)]
+
+    setFact(random)
+  }
+
+  return (
+    <div className="card fact-card">
+
+      <h2>🌌 Space Fact Generator</h2>
+
+      <div className="fact-box">
+
+        <p className="fact-en">
+          {fact.en}
+        </p>
+
+        <p className="fact-ru">
+          {fact.ru}
+        </p>
+
+      </div>
+
+      <button
+        className="fact-button"
+        onClick={randomFact}
+      >
+        Generate Fact
+      </button>
+
+    </div>
+  )
+}
+
+
 export default function App() {
   return (
     <div className="Dashboard">
@@ -165,6 +246,7 @@ export default function App() {
       <NasaSpaceMap />
 
       <NearEarthObjects />
+      <SpaceFacts />
 
     </div>
   );
